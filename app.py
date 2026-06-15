@@ -155,7 +155,7 @@ train_df, test_df, vessels = get_simulated_data(
 test_processed, forecast_metrics, feature_importance = run_forecasting(train_df, test_df)
 
 # 3. Run Optimization
-opt_results, kpis, prices = run_dispatch_optimization(
+opt_results, kpis, prices = run_optimization(
     test_processed, battery_capacity, battery_max_power, opt_target, base_price
 )
 
